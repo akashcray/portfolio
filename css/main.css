@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+/*-----------------------------
+Typography
+-------------------------------*/
+
+.active, .main-color{
+	color: #31D7CE!important;
+}
+.color-to-right{
+	background: linear-gradient(to right, #fff , #31D7CE);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.color-to-left{
+	background: linear-gradient(to right, #31D7CE , #fff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.no-padding{
+	padding: 0 !important;
+}
+.no-margin{
+	margin: 0 !important;
+}
+
+.active{
+	color: #31D7CE!important;
+	border-bottom: 3px solid #31D7CE!important;
+}
+.box-shadow{
+	box-shadow: 0px 0px 10px 1px #91e1dd;
+}
+/*-----------------------------
+Header
+-------------------------------*/
+
+.bg-custom{
+	width: 100%;
+    padding: 10px 40px;
+    border-bottom: 1px solid #31d7ce;
+    background-color: #fff;
+}
+.brand-text{
+	font-family: 'Lobster', cursive;
+	font-size: 40px;
+	margin: 0;
+    padding: 0;
+    text-shadow: -1px 1px 1px rgba(0,0,0,0.1);
+}
+.toggle-custom{
+	border: none;
+}
+.toggle-custom:focus{
+	outline: 0;
+}
+.ticon{
+	font-size: 30px;
+    color: #31d7ce;
+}
+.menu li{
+	margin-right: 40px;
+}
+.menu li:last-child{
+	margin-right: 0;
+}
+.menu li a{
+	position: relative;
+	text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+    transition: .5s;
+}
+.menu li a:before{
+	content: "";
+	width: 0;
+	height: 3px;
+	background: #31D7CE !important;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	transition: .5s;
+
+}
+.menu li:hover a:before{
+	width: 100%;
+}
+.menu li a:hover{
+	color: #31D7CE !important;
+}
+
+/*-----------------------------
+Banner
+-------------------------------*/
+
+.banner{
+	background-image: url(../img/banner.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	width: 100%;
+	
+}
+.overlay{
+	background: #31d7ce20;
+	min-height: 100vh;
+}
+.banner-content{
+	text-align: center;
+	padding-top: 250px;
+}
+.banner-content h1{
+	/*font-family: 'Raleway', sans-serif;*/
+	font-size: 50px;
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 15px;
+	animation-duration: 1.5s;
+}
+.banner-content p{
+	font-size: 20px;
+	color: #fff;
+	animation-duration: 1.5s;
+}
+.bicon{
+	font-size: 16px
+}
+
+/*-----------------------------
+About
+-------------------------------*/
+
+.about{
+	padding: 50px 0;
+}
+.about-head{
+	text-align: center;
+}
+.about-content{
+	margin-top: 20px;
+}
+.about-me{
+	animation-duration: 1.5s;
+}
+.about-img img{
+    clip-path: circle(35%);
+    padding: 30px 0px 0px 30px;
+}
+.about-content-text{
+	text-align: center;
+	margin-top: -45px;
+}
+.about-content-text h5{
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	color: #616161;
+}
+.about-content-text p{
+	font-family: 'Raleway', sans-serif;
+    margin: 0;
+    line-height: 22px;
+    color: #616161;
+    font-weight: 500;
+}
+	/*skill*/
+
+.skills{
+	text-align: center;
+	padding: 25px;
+	animation-duration: 1.5s;
+}
+.skills h5{
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 20px 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+.skill-icon{
+	margin-top: 25px;
+}
+
+/*-----------------------------
+Project
+-------------------------------*/
+
+.project{
+	padding: 50px 0;
+	background-color: rgba(0, 0, 0, 0.01);
+}
+.project-head{
+	text-align: center;
+}
+.section-title{
+    display: inline-block;
+	text-transform: uppercase;
+    margin-bottom: 80px;
+    padding: 0 20px 5px;
+    border-bottom: 4px solid #31D7CE;
+}
+
+.project-items{}
+
+/* card start */
+.card{
+	position: relative;
+    margin: .5rem 0 1rem 0;
+    background-color: #fff;
+    -webkit-transition: -webkit-box-shadow .25s;
+    transition: -webkit-box-shadow .25s;
+    transition: box-shadow .25s;
+    transition: box-shadow .25s, -webkit-box-shadow .25s;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    animation-duration: 1.5s;
+}
+.card-image{
+	position: relative;
+}
+.activator{
+	cursor: pointer;
+}
+img{
+	border-style: none;
+}
+.card-image img{
+	display: block;
+    border-radius: 2px 2px 0 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.waves-effect{
+	position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    -webkit-transition: .3s ease-out;
+    transition: .3s ease-out;
+}
+.waves-effect img{
+	position: relative;
+    z-index: -1;
+}
+.waves-block{
+	display: block;
+}
+.waves-light{
+	background-color:rgba(255,255,255,0.45);
+}
+.card-content{
+	padding: 24px;
+    border-radius: 0 0 2px 2px;
+}
+.card-content p{
+	margin: 0;
+}
+.card-content i{
+	line-height: 32px;
+    color: #808080;
+    font-size: 20px;
+    margin-right: 5px;
+}
+.card-title{
+	display: block;
+    line-height: 32px;
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.cbtn{
+	background: transparent;
+    border-radius: 50%;
+    height: 35px;
+    line-height: 35px;
+    width: 35px;
+    border: 1px solid #fbfbfb;
+    transition: .5s;
+}
+.cbtn:focus{
+	outline: none;
+}
+.cbtn:hover{
+	box-shadow: 0px 0px 10px 1px #91e1dd;
+}
+.card-title i .right{
+	margin-left: 15px;
+}
+.right{
+	float: right !important;
+}
+.card-reveal{
+	padding: 24px;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    overflow-y: auto;
+    left: 0;
+    top: 100%;
+    height: 100%;
+    z-index: 3;
+    display: none;
+}
+.card-reveal ul li{
+	font-size: 14px;
+    line-height: 200%;
+    margin-left: 20px;
+}
+.card-action{
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 1px solid rgba(160,160,160,0.2);
+    padding: 5px 20px;
+    text-align: center;
+}
+.cicon{
+	font-size: 50px;
+    padding: 15px;
+    transition: .5s;
+}
+.cicon:hover{
+	color: #1d3557;
+}
+
+/* card end */
+
+
+
+/*-----------------------------
+Experience
+-------------------------------*/
+
+.experience{}
+.experience-content{}
+

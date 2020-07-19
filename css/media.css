@@ -1,0 +1,94 @@
+/*Extra small devices (Portrait phones, Less than 576)*/
+@media (max-width: 575.98px){
+	
+	/*-----------------------------
+	Header
+	-------------------------------*/
+	
+	.menu li{
+		margin: 0;
+		padding: 5px 0;
+	}
+	.menu li a{
+		text-align: center;
+	}
+
+	/*-----------------------------
+	Banner
+	-------------------------------*/
+	
+	.banner{
+		height: 550px;
+	}
+	.banner-content h1{
+		font-size: 40px;
+	}
+	.banner-content p {
+	    font-size: 17px;
+	}
+
+	/*-----------------------------
+	About
+	-------------------------------*/
+
+	.skills{
+		margin-top: 30px;
+	}
+
+}
+
+/*small devices (Landscape phones, 576 and Up)*/
+@media (min-width: 576px) and (max-width: 767.98px){
+	
+	/*-----------------------------
+	Header
+	-------------------------------*/
+	
+	.menu li{
+		margin: 0;
+		padding: 5px 0;
+	}
+	.menu li a{
+		text-align: center;
+	}
+
+	/*-----------------------------
+	Banner
+	-------------------------------*/
+	
+	.banner{
+		height: 550px;
+	}
+	.banner-content h1{
+		font-size: 45px;
+	}
+	.banner-content p {
+	    font-size: 18px;
+	}
+}
+
+/*Medium devices (Tablets, 768 and Up)*/
+@media (min-width: 768px) and (max-width: 991.98px){
+
+	/*-----------------------------
+	Header
+	-------------------------------*/
+	
+	.menu li{
+		margin: 0;
+		padding: 5px 0;
+	}
+	.menu li a{
+		text-align: center;
+	}
+}
+
+/*Large devices (desktops, 992 and Up)*/
+@media (min-width: 992px) and (max-width: 1199.98px){
+
+}
+
+/*Extra large devices (large desktops, 1200 and Up)*/
+@media (min-width: 1200px){
+
+}
